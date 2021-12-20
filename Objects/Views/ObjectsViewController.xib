@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ObjectsViewController" customModule="Objects" customModuleProvider="target">
+            <connections>
+                <outlet property="searchBar" destination="xbX-3b-mW1" id="TRG-97-hfv"/>
+                <outlet property="tableView" destination="7jc-2g-RyV" id="lZ5-yl-Lab"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="7jc-2g-RyV">
+                    <rect key="frame" x="0.0" y="95" width="414" height="767"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="xbX-3b-mW1">
+                    <rect key="frame" x="0.0" y="44" width="414" height="51"/>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="xbX-3b-mW1" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="2vv-5b-ukr"/>
+                <constraint firstItem="7jc-2g-RyV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="gN6-A0-2Gg"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="7jc-2g-RyV" secondAttribute="trailing" id="kLu-Ed-wvB"/>
+                <constraint firstItem="xbX-3b-mW1" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="r7k-2s-nMR"/>
+                <constraint firstItem="xbX-3b-mW1" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="rsb-7X-bcS"/>
+                <constraint firstItem="7jc-2g-RyV" firstAttribute="top" secondItem="xbX-3b-mW1" secondAttribute="bottom" id="tIQ-xc-Jp1"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="7jc-2g-RyV" secondAttribute="bottom" id="tWv-eD-LEf"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="132.58928571428572"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
